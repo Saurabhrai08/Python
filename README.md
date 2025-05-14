@@ -10,11 +10,11 @@ An automated, intelligent system for **early detection of skin cancer** using **
 
 * 📷 **Image-based skin lesion classification**
 * 🧠 **CNN-based deep learning model** with high accuracy
-* ⚙️ **Real-time prediction** via Streamlit interface
 * 🗃️ **Image preprocessing** using Keras’ `ImageDataGenerator`
 * 📊 **Performance visualization** through confusion matrix and training plots
 * 💾 **Model saving** in HDF5 format for future inference
 * 📈 **Classification metrics** (accuracy, precision, recall, F1-score)
+* ⚙️ **Real-time prediction** via Streamlit interface
 
 ---
 
