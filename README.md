@@ -1,91 +1,77 @@
-# Skin Cancer Detection using CNN
+# 🧪 Skin Cancer Detection using CNN & Streamlit
 
-This project implements a Convolutional Neural Network (CNN) for binary classification of skin lesions into benign and malignant categories. The model is built using TensorFlow and Keras, with image preprocessing, training, evaluation, and visualization all included in the workflow.
+---
 
-Dataset
-The dataset is provided as a ZIP file (skin_cancer_detect.zip) containing two folders corresponding to the two classes: benign and malignant. The images are resized to 256x256 pixels, and an 80/20 split is applied for training and validation using ImageDataGenerator.
+An automated, intelligent system for **early detection of skin cancer** using **Convolutional Neural Networks (CNNs)** and deployed through a **Streamlit web app**. The system allows users to upload images of skin lesions and instantly classifies them as **benign** or **malignant**, enabling faster medical decision-making.
 
-  --Training images: 2,638
+---
 
-  --Validation images: 659
+## 🚀 Features
 
-  --Image size: 256 x 256
+* 📷 **Image-based skin lesion classification**
+* 🧠 **CNN-based deep learning model** with high accuracy
+* ⚙️ **Real-time prediction** via Streamlit interface
+* 🗃️ **Image preprocessing** using Keras’ `ImageDataGenerator`
+* 📊 **Performance visualization** through confusion matrix and training plots
+* 💾 **Model saving** in HDF5 format for future inference
+* 📈 **Classification metrics** (accuracy, precision, recall, F1-score)
 
-  --Classes: Benign, Malignant
+---
 
-Model Architecture
-The CNN model is created using Keras' Sequential API and includes:
+## 🛠️ Tech Stack
 
-Convolutional layers with ReLU activation
+* **Python 3.x**
+* [TensorFlow / Keras](https://www.tensorflow.org/)
+* [NumPy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Scikit-learn](https://scikit-learn.org/)
+* [Streamlit](https://streamlit.io/)
 
-MaxPooling layers to reduce spatial dimensions
+---
+## 🗂️ How to Use
 
-Flatten layer for converting features to 1D
+### 1. Setup Environment
 
-Fully connected Dense layer with Dropout
+Install required packages:
 
-Output layer with softmax activation for binary classification
+```bash
+pip install tensorflow numpy pandas matplotlib seaborn scikit-learn streamlit
+```
 
-Model details:
+### 2. Prepare Dataset
 
-Optimizer: Adam
+* Place your dataset zip file (`skin_cancer_detect.zip`) in the working directory.
+* Extract it and ensure folders are organized by class names: `benign/`, `malignant/`.
 
-Loss function: Categorical Crossentropy
+### 3. Train the Model
 
-Metrics: Accuracy
+Run your training script to:
 
-Total parameters: ~14.8 million
+* Load data
+* Build & train CNN model
+* Save the model as `a1_model.h5`
 
-Training
-The model is trained for up to 20 epochs with early stopping based on validation loss to prevent overfitting.
+### 4. Run Streamlit App
 
-Best validation accuracy: Approximately 85%
-
-Batch size: 32
-
-Epoch duration: Around 6–7 seconds on a Colab GPU
-
-Evaluation
-After training, the model is evaluated using:
-
-Confusion matrix
-
-Classification report (precision, recall, F1-score)
-
-Accuracy and loss plots over epochs
-
-Results on the validation set:
-
-Accuracy: 85%
-
-Benign class: Precision = 89%, Recall = 82%
-
-Malignant class: Precision = 81%, Recall = 88%
-
-Model Export
-The trained model is saved in HDF5 format as a1_model.h5 and can be downloaded or reused for deployment and inference tasks.
-
-Streamlit Web Application
-A Streamlit app has been developed to serve the trained model through a simple and interactive user interface. Users can upload a skin lesion image, and the app will predict whether the lesion is benign or malignant using the trained CNN model.
-
-To run the app:
-
-bash
-Copy
-Edit
+```bash
 streamlit run app.py
-This makes it easy for users to test the model in real time without writing code.
+```
 
-Visualizations
-Training and validation accuracy/loss plots
+### 5. Upload and Predict
 
-Confusion matrix heatmap using seaborn
+* Upload an image
+* Get real-time prediction and confidence level
 
-Getting Started
-Upload skin_cancer_detect.zip to your working directory.
+---
 
-Run the script or notebook to extract, preprocess, train, and evaluate the model.
 
-After training, the model file a1_model.h5 will be saved in the directory.
+## 🤝 Acknowledgements
 
-To use the Streamlit interface, run the app script.
+* [ISIC Archive](https://www.isic-archive.com/) – Skin cancer datasets
+* [TensorFlow](https://www.tensorflow.org/) – Deep Learning Framework
+* [Streamlit](https://streamlit.io/) – App interface
+* [Kaggle](https://www.kaggle.com/) – Dataset and community resources
+
+
