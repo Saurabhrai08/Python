@@ -5,13 +5,13 @@ This project implements a Convolutional Neural Network (CNN) for binary classifi
 Dataset
 The dataset is provided as a ZIP file (skin_cancer_detect.zip) containing two folders corresponding to the two classes: benign and malignant. The images are resized to 256x256 pixels, and an 80/20 split is applied for training and validation using ImageDataGenerator.
 
-Training images: 2,638
+  --Training images: 2,638
 
-Validation images: 659
+  --Validation images: 659
 
-Image size: 256 x 256
+  --Image size: 256 x 256
 
-Classes: Benign, Malignant
+  --Classes: Benign, Malignant
 
 Model Architecture
 The CNN model is created using Keras' Sequential API and includes:
