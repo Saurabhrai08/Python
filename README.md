@@ -72,6 +72,6 @@ streamlit run app.py
 * [ISIC Archive](https://www.isic-archive.com/) – Skin cancer datasets
 * [TensorFlow](https://www.tensorflow.org/) – Deep Learning Framework
 * [Streamlit](https://streamlit.io/) – App interface
-* [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/rm1000/skin-cancer-isic-images/data)) – Dataset and community resources
+* [Kaggle](https://www.kaggle.com/datasets/rm1000/skin-cancer-isic-images/data) – Dataset and community resources
 
 
